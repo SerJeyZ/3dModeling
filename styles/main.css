@@ -2857,6 +2857,10 @@ input[type="number"]-label,
   .contacts-list {
     justify-content: space-around;
   }
+
+  .contacts-list__link {
+    min-width: 210px;
+  }
 }
 
 @media (max-width: 600px) {
