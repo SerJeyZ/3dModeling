@@ -2098,7 +2098,6 @@ input[type="number"]-label,
 
 .list {
   display: flex;
-  overflow: hidden;
 }
 
 .list-filter {
