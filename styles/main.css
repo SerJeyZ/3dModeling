@@ -1421,7 +1421,8 @@ input[type="number"] {
   color: #ffffff;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background: #019be3;
 }
 
@@ -1571,9 +1572,10 @@ input[type="number"] {
 }
 
 .page-footer {
-  display: none;
-  min-height: 260px;
+  display: flex;
+  justify-content: center;
   padding-top: 40px;
+  padding-bottom: 10px;
   background-color: #24241f;
 }
 
@@ -1586,13 +1588,15 @@ input[type="number"] {
 }
 
 .page-footer__top {
+  width: 100%;
   padding-bottom: 40px;
   border-bottom: 1px solid #50504c;
 }
 
 .page-footer__bottom {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .social-title {
@@ -1649,9 +1653,14 @@ input[type="number"] {
   background: url("../img/icon-inst.svg") no-repeat center center;
 }
 
+.copirite {
+  text-align: center;
+}
+
 .disigne-dev {
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 
 .main {
@@ -1854,7 +1863,7 @@ input[type="number"] {
 }
 
 .map {
-  min-height: 600px;
+  height: 600px;
   background: url('../img/map.jpg') no-repeat top left;
 }
 
@@ -2015,11 +2024,16 @@ input[type="number"] {
   background-color: transparent;
 }
 
-.pacage-group__item:hover {
+.pacage-group__item:hover,
+.pacage-group__item:focus {
   background: #019be3;
 }
 
 .pacage-group__item--active {
+  background-color: #0178b0;
+}
+
+.pacage-group__item--active:hover {
   background-color: #0178b0;
 }
 
@@ -2108,6 +2122,7 @@ input[type="number"]-label,
   color: #19b5fe;
   border: 1px solid #19b5fe;
   border-radius: 50px;
+  overflow: hidden;
 }
 
 .list-filter--mobile {
@@ -2551,6 +2566,7 @@ input[type="number"]-label,
   padding: 20px;
   border-radius: 10px;
   resize: none;
+  outline: none;
 }
 
 .feedback-input__group {
@@ -2865,6 +2881,15 @@ input[type="number"]-label,
 @media (max-width: 600px) {
   .title {
     font-size: 32px;
+  }
+
+  .page-footer__top {
+    justify-content: center;
+  }
+
+  .page-footer__bottom {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .calculation-of-cost {
