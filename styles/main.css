@@ -1237,7 +1237,6 @@ body {
 
 .index-body {
   position: relative;
-  background: #ffffff url("../img/index-bg.jpg") no-repeat center top;
 }
 
 .index-body::after {
@@ -1246,8 +1245,7 @@ body {
   top: 0;
   width: 100%;
   max-width: 1920px;
-  height: 100%;
-  max-height: 700px;
+  height: 100vh;
   background: #ffffff url("../img/index-bg.jpg") no-repeat center top;
   background-size: cover;
   z-index: -1;
@@ -1514,6 +1512,7 @@ input[type="number"] {
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 10vh;
   padding-top: 35px;
   padding-bottom: 5px;
 }
@@ -1671,7 +1670,7 @@ input[type="number"] {
   display: flex;
   justify-content: center;
   width: 100%;
-  min-height: 550px;
+  min-height: 90vh;
   margin-top: 50px;
   padding-bottom: 30px;
 }
@@ -1898,7 +1897,7 @@ input[type="number"] {
 
 .scale {
   position: relative;
-  width: 610px;
+  width: 605px;
   height: 45px;
   margin-top: 5px;
   cursor: pointer;
@@ -1932,7 +1931,7 @@ input[type="number"] {
 }
 
 .scale__point1::after {
-  content: '100м2';
+  content: '1м2';
   position: absolute;
   width: 75px;
   height: 20px;
@@ -1944,11 +1943,11 @@ input[type="number"] {
 
 .scale__point2 {
   bottom: 0;
-  left: 195px;
+  left: 205px;
 }
 
 .scale__point2::after {
-  content: '1000м2';
+  content: '3500м2';
   position: absolute;
   width: 75px;
   height: 20px;
@@ -1960,11 +1959,11 @@ input[type="number"] {
 
 .scale__point3 {
   bottom: 0;
-  left: 390px;
+  left: 410px;
 }
 
 .scale__point3::after {
-  content: '10000м2';
+  content: '7000м2';
   position: absolute;
   width: 75px;
   height: 20px;
@@ -1980,7 +1979,7 @@ input[type="number"] {
 }
 
 .scale__point4::after {
-  content: '100000м2';
+  content: '10000м2';
   position: absolute;
   width: 90px;
   height: 20px;
@@ -1991,11 +1990,11 @@ input[type="number"] {
 }
 
 .bar {
-  position: absolute;
+  position: relative;
   width: 25px;
   height: 25px;
-  bottom: -3px;
-  left: 190px;
+  bottom: -23px;
+  left: 0;
   font-size: 0;
   border: 10px solid #19b5fe;
   border-radius: 50%;

@@ -110,16 +110,16 @@
                           <div class="calc-item calc-item__scale">
                             <p class="calc-item__title">Площадь помещения :</p>
                             <div class="scale">
-                              <div class="scale__strip">Шкала</div><span class="scale__point scale__point1">100м<sup>2</sup></span><span class="scale__point scale__point2">1000м<sup>2</sup></span><span class="scale__point scale__point3">10000м<sup>2</sup></span><span class="scale__point scale__point4">100000м<sup>2</sup></span>
+                              <div class="scale__strip">Шкала</div><span class="scale__point scale__point1">1м<sup>2</sup></span><span class="scale__point scale__point2">3500м<sup>2</sup></span><span class="scale__point scale__point3">7000м<sup>2</sup></span><span class="scale__point scale__point4">10000м<sup>2</sup></span>
                               <div class="bar">Бар</div>
                             </div>
                           </div>
-                          <div class="calc-item">
+                          <div class="calc-item calc-item__pacage">
                             <p class="calc-item__title">Выберите пакет :</p>
                             <div class="pacage-group">
-                              <div class="pacage-group__item">Light</div>
-                              <div class="pacage-group__item pacage-group__item--active">Medium</div>
-                              <div class="pacage-group__item">Full</div>
+                              <div class="pacage-group__item" data-price="3200">Light</div>
+                              <div class="pacage-group__item pacage-group__item--active" data-price="4850">Medium</div>
+                              <div class="pacage-group__item" data-price="5999">Full</div>
                             </div>
                           </div>
                         </div>
@@ -127,7 +127,7 @@
                           <ul class="calc-value">
                             <li class="calc-value__item">
                               <label class="calc-input-label" for="area">Площадь помещения м<sup>2</sup> :</label>
-                              <input class="calc-input" type="number" name="area" id="area" value="1000">
+                              <input class="calc-input" type="number" name="area" id="area" autocomplete="off" value="10">
                             </li>
                             <li class="calc-value__item">
                               <label class="calc-input-label" for="cost">Средняя стоимость 1 м<sup>2</sup> , тг:</label>
